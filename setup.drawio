@@ -1,41 +1,126 @@
-<mxfile host="app.diagrams.net">
-  <diagram name="Page-1" id="BND_zoBmfXVskhHNXNEE">
-    <mxGraphModel dx="1136" dy="733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+<mxfile host="app.diagrams.net" type="github">
+  <diagram id="m3-progressive-01" name="01 - تشخیص پیشرو">
+    <mxGraphModel dx="1180" dy="1280" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1180" pageHeight="1280" math="0" shadow="0" background="#ffffff">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="1coTdPfG24dBcjt0-17--1" edge="1" parent="1" source="1coTdPfG24dBcjt0-17--2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1coTdPfG24dBcjt0-17--5" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="title" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;font-size:27px;&quot;&gt;&lt;b&gt;بخش ۱ — تشخیص پیشرو بودن کندل&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;text;strokeColor=none;fillColor=none;">
+          <mxGeometry as="geometry" x="50" y="24" width="1080" height="45" />
         </mxCell>
-        <mxCell id="1coTdPfG24dBcjt0-17--2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="زنجیره ها" vertex="1">
-          <mxGeometry height="60" width="120" x="350" y="160" as="geometry" />
+        <mxCell id="scope" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;font-size:16px;&quot;&gt;تحلیل روی M3؛ فقط یک ویژگی کندل، نه تشخیص بیس یا مجوز معامله&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;text;strokeColor=none;fillColor=none;">
+          <mxGeometry as="geometry" x="80" y="78" width="1020" height="34" />
         </mxCell>
-        <mxCell id="1coTdPfG24dBcjt0-17--3" edge="1" parent="1" source="1coTdPfG24dBcjt0-17--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1coTdPfG24dBcjt0-17--7" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="start" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;&quot;&gt;شروع بررسی یک کندل&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;ellipse;strokeColor=#526882;fillColor=#eaf1f9;">
+          <mxGeometry as="geometry" x="440" y="140" width="260" height="54" />
         </mxCell>
-        <mxCell id="1coTdPfG24dBcjt0-17--4" edge="1" parent="1" source="1coTdPfG24dBcjt0-17--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1coTdPfG24dBcjt0-17--9" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="input" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;&quot;&gt;دریافت کندل مورد بررسی و کندل قبلی&lt;br/&gt;همراه وضعیت بسته‌شدن آن‌ها&lt;/div&gt;&lt;div dir=&quot;ltr&quot; style=&quot;font-family:Arial;font-size:16px;line-height:1.8;&quot;&gt;Close[i], High[i-1], Low[i-1]&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;shapeInside=1;fixedSize=1;strokeColor=#6d839f;fillColor=#f1f5fa;">
+          <mxGeometry as="geometry" x="355" y="235" width="430" height="96" />
         </mxCell>
-        <mxCell id="1coTdPfG24dBcjt0-17--5" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="پیشرو" vertex="1">
-          <mxGeometry height="60" width="120" x="350" y="300" as="geometry" />
+        <mxCell id="ready" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;&quot;&gt;آیا دو کندل متوالیِ&lt;br/&gt;بسته‌شده در دسترس‌اند؟&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;rhombus;strokeColor=#b79040;fillColor=#fff7df;">
+          <mxGeometry as="geometry" x="405" y="380" width="330" height="140" />
         </mxCell>
-        <mxCell id="1coTdPfG24dBcjt0-17--6" edge="1" parent="1" source="1coTdPfG24dBcjt0-17--7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1coTdPfG24dBcjt0-17--11" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="not-ready" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;font-size:16px;&quot;&gt;فعلاً قابل بررسی نیست&lt;br/&gt;بدون تشخیص؛ منتظر دادهٔ کامل&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;shapeInside=1;fixedSize=1;strokeColor=#6d839f;fillColor=#f1f5fa;">
+          <mxGeometry as="geometry" x="855" y="402" width="280" height="96" />
         </mxCell>
-        <mxCell id="1coTdPfG24dBcjt0-17--7" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="پیشرو صعودی" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="300" as="geometry" />
+        <mxCell id="early-end" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;font-size:16px;&quot;&gt;پایان این بررسی&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;ellipse;strokeColor=#526882;fillColor=#eaf1f9;">
+          <mxGeometry as="geometry" x="905" y="540" width="180" height="46" />
         </mxCell>
-        <mxCell id="1coTdPfG24dBcjt0-17--8" edge="1" parent="1" source="1coTdPfG24dBcjt0-17--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1coTdPfG24dBcjt0-17--10" value="">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="above" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;&quot;&gt;کلوز بالاتر از سقف&lt;br/&gt;کندل قبلی است؟&lt;/div&gt;&lt;div dir=&quot;ltr&quot; style=&quot;font-family:Arial;font-size:16px;line-height:1.8;&quot;&gt;Close[i] &amp;gt; High[i-1]&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;rhombus;strokeColor=#b79040;fillColor=#fff7df;">
+          <mxGeometry as="geometry" x="405" y="580" width="330" height="140" />
         </mxCell>
-        <mxCell id="1coTdPfG24dBcjt0-17--9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="پیشرو نزولی" vertex="1">
-          <mxGeometry height="60" width="120" x="150" y="300" as="geometry" />
+        <mxCell id="bull" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;&quot;&gt;&lt;b&gt;پیشرو صعودی&lt;/b&gt;&lt;/div&gt;&lt;div dir=&quot;ltr&quot; style=&quot;font-family:Arial;font-size:16px;line-height:1.8;&quot;&gt;result = LEADING_BULL&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;rounded=0;strokeColor=#739b79;fillColor=#edf7ef;">
+          <mxGeometry as="geometry" x="855" y="603" width="280" height="94" />
         </mxCell>
-        <mxCell id="1coTdPfG24dBcjt0-17--10" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;rounded=0;" value="کلوز کندل باید زیر low کندل قبل باشه" vertex="1">
-          <mxGeometry height="60" width="120" x="150" y="440" as="geometry" />
+        <mxCell id="below" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;&quot;&gt;کلوز پایین‌تر از کف&lt;br/&gt;کندل قبلی است؟&lt;/div&gt;&lt;div dir=&quot;ltr&quot; style=&quot;font-family:Arial;font-size:16px;line-height:1.8;&quot;&gt;Close[i] &amp;lt; Low[i-1]&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;rhombus;strokeColor=#b79040;fillColor=#fff7df;">
+          <mxGeometry as="geometry" x="405" y="780" width="330" height="140" />
         </mxCell>
-        <mxCell id="1coTdPfG24dBcjt0-17--11" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;rounded=0;" value="کلوز کندل باید بالای hi کندل قبل باشه" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="440" as="geometry" />
+        <mxCell id="bear" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;&quot;&gt;&lt;b&gt;پیشرو نزولی&lt;/b&gt;&lt;/div&gt;&lt;div dir=&quot;ltr&quot; style=&quot;font-family:Arial;font-size:16px;line-height:1.8;&quot;&gt;result = LEADING_BEAR&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;rounded=0;strokeColor=#b47878;fillColor=#fbeeee;">
+          <mxGeometry as="geometry" x="855" y="803" width="280" height="94" />
+        </mxCell>
+        <mxCell id="not-leading" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;&quot;&gt;&lt;b&gt;غیرپیشرو&lt;/b&gt;&lt;/div&gt;&lt;div dir=&quot;ltr&quot; style=&quot;font-family:Arial;font-size:16px;line-height:1.8;&quot;&gt;result = NOT_LEADING&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;rounded=0;strokeColor=#8a929e;fillColor=#f3f4f6;">
+          <mxGeometry as="geometry" x="30" y="803" width="280" height="94" />
+        </mxCell>
+        <mxCell id="join" parent="1" vertex="1" value="" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;ellipse;fillColor=#677180;strokeColor=#677180;">
+          <mxGeometry as="geometry" x="565" y="960" width="10" height="10" />
+        </mxCell>
+        <mxCell id="output" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;&quot;&gt;تحویل نتیجهٔ تشخیص&lt;/div&gt;&lt;div dir=&quot;ltr&quot; style=&quot;font-family:Arial;font-size:16px;line-height:1.8;&quot;&gt;result&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;shapeInside=1;fixedSize=1;strokeColor=#6d839f;fillColor=#f1f5fa;">
+          <mxGeometry as="geometry" x="400" y="1010" width="340" height="70" />
+        </mxCell>
+        <mxCell id="end" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;&quot;&gt;پایان بررسی این کندل&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;ellipse;strokeColor=#526882;fillColor=#eaf1f9;">
+          <mxGeometry as="geometry" x="450" y="1120" width="240" height="54" />
+        </mxCell>
+        <mxCell id="notes" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;font-size:16px;&quot;&gt;&lt;b&gt;برای خواندن این بخش&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;فقط کلوز با سقف و کف قبلی مقایسه می‌شود؛ رنگ و اندازهٔ بدنه شرط نیستند.&lt;br/&gt;&lt;br/&gt;کلوز دقیقاً روی سقف یا کف قبلی، پیشرو محسوب نمی‌شود.&lt;br/&gt;&lt;br/&gt;«غیرپیشرو» به معنی «غیرپیمایشی» یا «استقرار» نیست.&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;rounded=0;strokeColor=#d9dee6;fillColor=#fafbfc;align=right;spacing=17;">
+          <mxGeometry as="geometry" x="35" y="389" width="290" height="308" />
+        </mxCell>
+        <mxCell id="source" parent="1" vertex="1" value="&lt;div dir=&quot;rtl&quot; style=&quot;line-height:1.5;font-size:12px;&quot;&gt;فرض ورودی: دادهٔ قیمتی معتبر از یک نماد و منبع. این بلوک برای هر کندل بسته‌شده تکرار می‌شود.&lt;br/&gt;مرجع تعریف: جزوه، صفحهٔ ۱، P01-004؛ توابع isLeadingBull / isLeadingBear در اندیکاتور.&lt;br/&gt;تایم M3: تصمیم A001. ورودی/خروجی و کنترل آماده‌بودن داده، طراحی آموزشی این نمودار است.&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontFamily=Tahoma;fontSize=17;fontColor=#1f2937;align=center;verticalAlign=middle;spacing=8;strokeWidth=1.5;text;strokeColor=none;fillColor=none;">
+          <mxGeometry as="geometry" x="40" y="1200" width="1100" height="60" />
+        </mxCell>
+        <mxCell id="e-start" parent="1" edge="1" source="start" target="input" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e-input" parent="1" edge="1" source="input" target="ready" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e-ready-yes" parent="1" edge="1" source="ready" target="above" value="بله" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="offset" x="18" y="0" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-ready-no" parent="1" edge="1" source="ready" target="not-ready" value="خیر" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="offset" x="0" y="-14" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-not-ready" parent="1" edge="1" source="not-ready" target="early-end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e-above-yes" parent="1" edge="1" source="above" target="bull" value="بله" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="offset" x="0" y="-14" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-above-no" parent="1" edge="1" source="above" target="below" value="خیر" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="offset" x="18" y="0" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-below-yes" parent="1" edge="1" source="below" target="bear" value="بله" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="offset" x="0" y="-14" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-below-no" parent="1" edge="1" source="below" target="not-leading" value="خیر" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="offset" x="0" y="-14" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-bull-join" parent="1" edge="1" source="bull" target="join" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=none;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1160" y="650" />
+              <mxPoint x="1160" y="965" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-bear-join" parent="1" edge="1" source="bear" target="join" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=none;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="995" y="965" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-non-join" parent="1" edge="1" source="not-leading" target="join" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=none;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="170" y="965" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-join-output" parent="1" edge="1" source="join" target="output" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e-output-end" parent="1" edge="1" source="output" target="end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#667085;strokeWidth=1.5;fontFamily=Tahoma;fontSize=16;fontColor=#1f2937;labelBackgroundColor=#ffffff;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry as="geometry" relative="1" />
         </mxCell>
       </root>
     </mxGraphModel>
