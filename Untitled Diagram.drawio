@@ -1,9 +1,42 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="PZ8Iq3eKepFxBXXd8_Li">
-    <mxGraphModel>
+    <mxGraphModel dx="1136" dy="733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-2" edge="1" parent="1" source="0NGUzdpc5RgJHpEtyqZn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0NGUzdpc5RgJHpEtyqZn-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="زنجیره ها" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-4" edge="1" parent="1" source="0NGUzdpc5RgJHpEtyqZn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0NGUzdpc5RgJHpEtyqZn-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-5" edge="1" parent="1" source="0NGUzdpc5RgJHpEtyqZn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0NGUzdpc5RgJHpEtyqZn-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-6" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="پیشرو" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-7" edge="1" parent="1" source="0NGUzdpc5RgJHpEtyqZn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0NGUzdpc5RgJHpEtyqZn-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="پیشرو صعودی" vertex="1">
+          <mxGeometry height="60" width="120" x="565" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-9" edge="1" parent="1" source="0NGUzdpc5RgJHpEtyqZn-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0NGUzdpc5RgJHpEtyqZn-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="پیشرو نزولی" vertex="1">
+          <mxGeometry height="60" width="120" x="165" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-11" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;rounded=0;" value="کلوز کندل باید زیر low کندل قبل باشه" vertex="1">
+          <mxGeometry height="60" width="120" x="165" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="0NGUzdpc5RgJHpEtyqZn-12" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;rounded=0;" value="کلوز کندل باید بالای hi کندل قبل باشه" vertex="1">
+          <mxGeometry height="60" width="120" x="565" y="420" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
