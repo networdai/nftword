@@ -1,26 +1,195 @@
 <mxfile host="app.diagrams.net">
   <diagram id="bases-plus-unified" name="الگوریتم واحد بیس‌ها">
-    <mxGraphModel dx="1712" dy="634" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="6052" pageHeight="10278" math="0" shadow="0">
+    <mxGraphModel dx="4623" dy="1520" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="6052" pageHeight="10278" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=PeydaWebVF;fontSize=36;align=center;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;fontColor=default;" value="&lt;div dir=&quot;rtl&quot;&gt;&lt;b&gt;الگوریتم واحد تحلیل بیس‌ها&lt;/b&gt; | M3&lt;/div&gt;" vertex="1">
-          <mxGeometry height="65" width="5952" x="50" y="25" as="geometry" />
+        <mxCell id="band-2" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#eaf0f4;swimlaneFillColor=#fafcfd;strokeColor=#c9d7df;fontFamily=PeydaWebVF;fontSize=22;fontColor=#234351;align=right;spacingRight=18;collapsible=0;container=0;connectable=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div dir=&quot;rtl&quot;&gt;&lt;b&gt;&amp;nbsp;ساخت نامزد بیس — عادی / اصلی / محض&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="2921" width="2620" x="307" y="2768" as="geometry" />
         </mxCell>
-        <mxCell id="subtitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=PeydaWebVF;fontSize=21;align=center;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div dir=&quot;rtl&quot;&gt;کندل‌ها ← تشکیل بیس ← موکد و ناقض‌ها ← تأیید و معکوس ← نتیجهٔ تحلیل | منبع: بیس + و سه تصویر تکمیلی&lt;/div&gt;" vertex="1">
-          <mxGeometry height="45" width="5952" x="50" y="90" as="geometry" />
+        <mxCell id="tags" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#eaf3f7;strokeColor=#5b8393;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=parallelogram;perimeter=parallelogramPerimeter;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:576px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;ثبت ویژگی‌ها&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;این آزمون برای هر کندل نگهداری می‌شود.&lt;br&gt;در کنترل استقرار: X = S و P = آخرین پیشروی بیس.&lt;br&gt;پیشتاز بودن به‌تنهایی به معنی موکد بودن نیست.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;خروجی مشترکِ تشخیص کندل&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="186" width="640" x="990" y="91" as="geometry" />
         </mxCell>
-        <mxCell id="legend" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=PeydaWebVF;fontSize=17;align=center;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div dir=&quot;rtl&quot;&gt;خط پیوسته: مسیر تصمیم | خط‌چین: وابستگی / گزارش / چرخه | سبز: احراز | قرمز: ابطال | نارنجی: تعریفِ باز، نه قانون حدسی&lt;br&gt;جواب نامعلومِ هر شرط به مسیر «حل‌نشده» می‌رود، نه شاخهٔ «خیر». کمبود شواهد آینده = انتظار. همهٔ اجزا روی همین یک بوم‌اند.&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="5952" x="50" y="145" as="geometry" />
+        <mxCell id="scan" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#f5f8fa;strokeColor=#8ca1ac;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:549px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;با هر کندل، هر دو مسیر تشکیل را بررسی کن&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;مسیر مخالف‌رنگ: عادی / اصلی&lt;br&gt;مسیر هم‌رنگِ ادغامی: محض&lt;br&gt;هم‌زمان، بیس‌های فعال قبلی نیز به‌روزرسانی می‌شوند.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="186" width="610" x="1005" y="352" as="geometry" />
         </mxCell>
-        <mxCell id="band-0" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#eaf0f4;swimlaneFillColor=#fafcfd;strokeColor=#c9d7df;fontFamily=PeydaWebVF;fontSize=22;fontColor=#234351;align=right;spacingRight=18;collapsible=0;container=0;connectable=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div dir=&quot;rtl&quot;&gt;&lt;b&gt;۱ | ورودی و واژگان مشترک&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="688" width="1353" x="615" y="193" as="geometry" />
+        <mxCell id="e18" dataRelation="" edge="1" parent="band-2" source="tags" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.50000;exitY=1.00054;exitDx=0;exitDy=0;entryX=0.50000;entryY=-0.00215;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="scan" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="band-1" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#eaf0f4;swimlaneFillColor=#fafcfd;strokeColor=#c9d7df;fontFamily=PeydaWebVF;fontSize=22;fontColor=#234351;align=right;spacingRight=18;collapsible=0;container=0;connectable=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div dir=&quot;rtl&quot;&gt;&lt;b&gt;۲ | تشخیص صفت پیشتاز — سه تصویر شما&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="1825" width="2084" x="150" y="854" as="geometry" />
+        <mxCell id="oppbase" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:346px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;اولین کندل مخالف&amp;nbsp;&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;پس از پیشرو موجود است؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;S = نخستین مخالف؛&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;&amp;nbsp;P1 = آخرین پیشرو؛&amp;nbsp;&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;P2 و P3 قدیمی‌ترند.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="540" x="1040" y="647" as="geometry" />
         </mxCell>
-        <mxCell id="band-2" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#eaf0f4;swimlaneFillColor=#fafcfd;strokeColor=#c9d7df;fontFamily=PeydaWebVF;fontSize=22;fontColor=#234351;align=right;spacingRight=18;collapsible=0;container=0;connectable=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div dir=&quot;rtl&quot;&gt;&lt;b&gt;۳ | ساخت نامزد بیس — عادی / اصلی / محض&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="2921" width="2620" x="98" y="2652" as="geometry" />
+        <mxCell id="e19" dataRelation="مسیر مخالف‌رنگ" edge="1" parent="band-2" source="scan" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;entryX=0.50000;entryY=-0.00071;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="oppbase" value="مسیر مخالف‌رنگ">
+          <mxGeometry relative="1" x="0.0092" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1313.5" y="609.6700000000001" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="single" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:333px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;آیا S استقرارِ تک‌پیشرو P1 است؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;سنجش نسبت Low تا High خود P1&lt;br&gt;F(C_S) &amp;lt; 0.5 با جهت فیبو + شروط کامل استقرار&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;&lt;span style=&quot;font-size: 12px; background-color: transparent; color: light-dark(rgb(68, 51, 12), rgb(206, 192, 158));&quot;&gt;برابری و سایر شروطِ حل‌نشده، پذیرش یا رد حدسی نیستند.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="554" x="338" y="647" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" dataRelation="بله" edge="1" parent="band-2" source="oppbase" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="single" value="بله">
+          <mxGeometry relative="1" x="-0.1992" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="purepre" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:371px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;نامزد محض از مسیر هم‌رنگ؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;پیشرو همگونِ غیرشمارشی + حداقل یک ادغامی هم‌رنگ&lt;br&gt;حداقل ۳ پیشرو همگون در ماقبل&lt;br&gt;استقرار مخالف‌رنگ لازم نیست.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۳&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="322" width="580" x="1873" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" dataRelation="مسیر محض؛ مستقل" edge="1" parent="band-2" source="scan" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="purepre" value="مسیر محض؛ مستقل">
+          <mxGeometry relative="1" x="-0.0206" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="img_note" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#5f5540;fillColor=#fffdf7;strokeColor=#c4b692;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=note;size=16;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:576px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;برابری Open(X)=Close(P) و نبود سایه در شکل، شرط اجباری فرض نشده‌اند.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="86" width="560" x="369" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" dataRelation="توضیح منبع" edge="1" parent="band-2" source="img_note" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#3e7898;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0;exitY=0;exitDx=560;exitDy=51;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;exitPerimeter=0;" target="tags" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pureafter" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:352px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;حداقل ۳ پیشرو همگون در مابعد احراز شده؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;زمان تأیید فقط بعد از رسیدن شواهد مابعد است؛&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;نه روی کندل مبدأ.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="322" width="580" x="1869" y="938" as="geometry" />
+        </mxCell>
+        <mxCell id="e40" dataRelation="بله" edge="1" parent="band-2" source="purepre" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pureafter" value="بله">
+          <mxGeometry relative="1" x="-0.3041" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2541.71" y="443" />
+              <mxPoint x="2541.71" y="1099" />
+            </Array>
+            <mxPoint x="2630.5" y="599" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="normalwait" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#eaf3f7;strokeColor=#5b8393;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=parallelogram;perimeter=parallelogramPerimeter;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:414px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;این شاخه فعلاً نامزد تازه ندارد&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;انتظار برای دادهٔ بعدی؛&amp;nbsp;&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;سایر مسیرها و بیس‌های قبلی ادامه دارند.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="146" width="460" x="1901" y="714" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" dataRelation="خیر" edge="1" parent="band-2" source="oppbase" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=0.99222;exitY=0.50893;exitDx=0;exitDy=0;entryX=-0.00913;entryY=0.49920;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="normalwait" value="خیر">
+          <mxGeometry relative="1" x="-0.4986" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e41" dataRelation="خیر" edge="1" parent="band-2" source="purepre" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.55587;entryY=0.00000;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="normalwait" value="خیر">
+          <mxGeometry relative="1" x="-0.226" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="two" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:365px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;آزمون دو پیشرو&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;فقط وقتی تک به‌علت عبور از ۰٫۵ پذیرفته نشد:&lt;br&gt;P2 نیز پیشرو همگونِ P1 است؟&lt;br&gt;S استقرارِ محدودهٔ سایه‌های مجموع P2 و P1 است؟&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="276" width="570" x="328" y="1002" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" dataRelation="عبور از ۰٫۵" edge="1" parent="band-2" source="single" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=0.50000;exitY=1.00054;exitDx=0;exitDy=0;entryX=0.50000;entryY=-0.00036;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="two" value="عبور از ۰٫۵">
+          <mxGeometry relative="1" x="-0.1334" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="purewait" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#eaf3f7;strokeColor=#5b8393;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=parallelogram;perimeter=parallelogramPerimeter;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:495px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;محض: در انتظار شواهد مابعد&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;کمبود کندل، رد قطعی نیست.&lt;br&gt;حدود دقیق شمارش و ادغام نامشخص بمانند،&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;نه اینکه با حدس پذیرفته شوند.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="188" width="550" x="1035" y="1005" as="geometry" />
+        </mxCell>
+        <mxCell id="e43" dataRelation="هنوز داده کافی نیست / نامشخص" edge="1" parent="band-2" source="pureafter" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="purewait" value="هنوز داده کافی نیست / نامشخص">
+          <mxGeometry relative="1" x="0.0097" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e76" dataRelation="تعریف/شمارش نامشخص" edge="1" parent="band-2" source="purepre" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#3e7898;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;entryX=1;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="purewait" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3288" y="-216" />
+            </Array>
+            <mxPoint x="2491.67" y="495.6700000000001" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oldest" parent="band-2" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:294px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;کندل «اول» دو‌تایی غیرشمارشی است؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;مرجع دقیق واژهٔ «اول» هنوز باید روشن شود.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="460" x="385" y="1386" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" dataRelation="بله" edge="1" parent="band-2" source="two" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="oldest" value="بله">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-7" y="2.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H5IuL7tNZvzVFJYmUZ6D-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#1F1F1F);" value="" vertex="1">
+          <mxGeometry height="240" width="927" x="3457.5" y="181" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=PeydaWebVF;fontSize=50;align=right;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;fontColor=default;labelBackgroundColor=none;" value="&lt;div dir=&quot;rtl&quot;&gt;&lt;b&gt;الگوریتم واحد تحلیل بیس‌ها&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="65" width="716" x="3671" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=PeydaWebVF;fontSize=21;align=right;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;labelBackgroundColor=none;" value="&lt;div dir=&quot;rtl&quot;&gt;کندل‌ها ← تشکیل بیس ← موکد و ناقض‌ها ← تأیید و معکوس ← نتیجهٔ تحلیل&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="912" x="3474" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=PeydaWebVF;fontSize=24;align=right;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;labelBackgroundColor=none;" value="&lt;div dir=&quot;rtl&quot;&gt;خط پیوسته: مسیر تصمیم&lt;/div&gt;&lt;div dir=&quot;rtl&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;خط‌چین: وابستگی / گزارش / چرخه&lt;/span&gt;&lt;/div&gt;&lt;div dir=&quot;rtl&quot;&gt;سبز: احراز&amp;nbsp;&lt;/div&gt;&lt;div dir=&quot;rtl&quot;&gt;قرمز: ابطال&lt;/div&gt;&lt;div dir=&quot;rtl&quot;&gt;نارنجی: جواب نامعلومِ هر شرط به مسیر حل‌نشده با&amp;nbsp;کمبود شواهد&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="596" x="3765" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="band-0" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#eaf0f4;swimlaneFillColor=#fafcfd;strokeColor=#c9d7df;fontFamily=PeydaWebVF;fontSize=22;fontColor=#234351;align=right;spacingRight=18;collapsible=0;container=0;connectable=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div dir=&quot;rtl&quot;&gt;&lt;b&gt;&amp;nbsp;ورودی و واژگان مشترک&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="688" width="2117" x="599" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="band-1" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#eaf0f4;swimlaneFillColor=#fafcfd;strokeColor=#c9d7df;fontFamily=PeydaWebVF;fontSize=22;fontColor=#234351;align=right;spacingRight=18;collapsible=0;container=0;connectable=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;b&gt;تشخیص صفات پیشتاز&lt;/b&gt;" vertex="1">
+          <mxGeometry height="1453" width="2102" x="614" y="1196" as="geometry" />
+        </mxCell>
+        <mxCell id="wick" parent="band-1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:365px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;کلوز از Open قبلی گذشته،&amp;nbsp;&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;اما داخل سایهٔ مقابل است؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;نزولی: L(P) &amp;lt; C(X) &amp;lt; O(P)&lt;br&gt;صعودی: O(P) &amp;lt; C(X) &amp;lt; H(P)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="285" width="570" x="712" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="breakprev" parent="band-1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:307px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;آیا Close از انتهای دامنهٔ P عبور کرده؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;نزولی: C(X) &amp;lt; L(P)&lt;br&gt;صعودی: C(X) &amp;gt; H(P)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="480" x="757" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" dataRelation="خیر" edge="1" parent="band-1" source="wick" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=0.50000;exitY=1.00143;exitDx=0;exitDy=0;entryX=0.50000;entryY=-0.00071;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="breakprev" value="خیر">
+          <mxGeometry relative="1" x="-0.1766" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k" parent="band-1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:346px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;تعداد پیشروهای همگونِ متوالی پیش از X؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;K = طول توالیِ هم‌جهت با P که به P ختم می‌شود.&lt;br&gt;فقط شمار کل کندل‌های هم‌رنگ کافی نیست.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="327" width="540" x="727" y="782" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" dataRelation="بله" edge="1" parent="band-1" source="breakprev" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="k" value="بله">
+          <mxGeometry relative="1" x="-0.1077" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1037" y="741" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="plain" parent="band-1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#f5f8fa;strokeColor=#8ca1ac;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:459px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;بدون صفت احرازشده / حالت مرزی&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;ویژگی پیشرو بودن، در صورت وجود، حفظ می‌شود.&lt;br&gt;برابری Open/Low/High، دوجی و جزئیات گپ با شکل حل نشده‌اند.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="152" width="510" x="1465" y="869.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" dataRelation="خیر / مرزی" edge="1" parent="band-1" source="breakprev" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="plain" value="خیر / مرزی">
+          <mxGeometry relative="1" x="-0.7664" y="4" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1723.4299999999998" y="567.71" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" dataRelation="K = 0 / نامشخص" edge="1" parent="band-1" source="k" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="plain" value="K = 0 / نامشخص">
+          <mxGeometry relative="1" x="-0.1034" y="4" as="geometry">
+            <mxPoint x="1" as="offset" />
+            <mxPoint x="1292" y="1008" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pp" parent="band-1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#214831;fillColor=#e8f4ed;strokeColor=#6c987c;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:405px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;پیشرو پیشتاز&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;K &amp;gt;= 2&lt;br&gt;P و دست‌کم یک کندل پیش از آن،&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;&amp;nbsp;پیشرو همگونِ جهت قبلی‌اند.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="176" width="450" x="772" y="1224" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" dataRelation="K &gt;= 2" edge="1" parent="band-1" source="k" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;entryX=0.50000;entryY=-0.00057;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="pp" value="K &amp;gt;= 2">
+          <mxGeometry relative="1" x="0.1031" y="-2" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1015.71" y="1140.4299999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="attr" parent="band-1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#214831;fillColor=#e8f4ed;strokeColor=#6c987c;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:360px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;پیشرو با صفت پیشتاز&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;K = 1&lt;br&gt;تنها P پیشرو همگونِ جهت قبلی است.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="400" x="162" y="870.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" dataRelation="K = 1" edge="1" parent="band-1" source="k" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=-0.005;exitY=0.503;exitDx=0;exitDy=0;entryX=1.00100;entryY=0.50000;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;exitPerimeter=0;" target="attr" value="K = 1">
+          <mxGeometry relative="1" x="-0.0312" y="3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pioneer" parent="band-1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#214831;fillColor=#e8f4ed;strokeColor=#6c987c;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:423px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;پیشتاز&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;تصویر ۱: بدنهٔ مخالف از Open قبلی عبور کرده؛&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;&amp;nbsp;هنوز از Low قبلی نگذشته است.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="176" width="400" x="162" y="1224" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" dataRelation="بله" edge="1" parent="band-1" source="wick" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=-0.00018;exitY=0.50000;exitDx=0;exitDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="pioneer" value="بله">
+          <mxGeometry relative="1" x="-0.7927" y="-3" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="50.33000000000004" y="215.5" />
+              <mxPoint x="50.33000000000004" y="1312" />
+            </Array>
+            <mxPoint x="-4.669999999999959" y="1239.33" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="band-3" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#eaf0f4;swimlaneFillColor=#fafcfd;strokeColor=#c9d7df;fontFamily=PeydaWebVF;fontSize=22;fontColor=#234351;align=right;spacingRight=18;collapsible=0;container=0;connectable=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div dir=&quot;rtl&quot;&gt;&lt;b&gt;۴ | اعتبار تشکیل — موکدها و ناقض‌ها&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="2536" width="3247" x="217" y="5546" as="geometry" />
@@ -31,68 +200,23 @@
         <mxCell id="band-5" parent="1" style="swimlane;html=1;startSize=40;horizontal=1;rounded=0;fillColor=#eaf0f4;swimlaneFillColor=#fafcfd;strokeColor=#c9d7df;fontFamily=PeydaWebVF;fontSize=22;fontColor=#234351;align=right;spacingRight=18;collapsible=0;container=0;connectable=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div dir=&quot;rtl&quot;&gt;&lt;b&gt;۶ | نتیجهٔ یکپارچه و مرز ورود&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="1123" width="2438" x="3556" y="9057" as="geometry" />
         </mxCell>
-        <mxCell id="start" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#ffffff;fillColor=#163b48;strokeColor=#163b48;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=1;arcSize=35;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:450px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;شروع / دریافت کندل تازهٔ M3&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;یک نماد و یک منبع؛ ادامهٔ وضعیت هر بیس مستقل است.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="start" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#ffffff;fillColor=#163b48;strokeColor=#163b48;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=1;arcSize=35;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:450px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;شروع / دریافت کندل تازهٔ M3&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="116" width="500" x="1363" y="258" as="geometry" />
         </mxCell>
         <mxCell id="input" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#eaf3f7;strokeColor=#5b8393;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=parallelogram;perimeter=parallelogramPerimeter;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:513px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;ورودی تحلیل&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;کندل بسته‌شده + OHLC و عقبهٔ موجود&lt;br&gt;نامزدها و بیس‌های فعال + رویدادهای شکستِ معلوم تا همین لحظه&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="141" width="570" x="1328" y="414" as="geometry" />
+          <mxGeometry height="141" width="630" x="1298" y="414" as="geometry" />
         </mxCell>
-        <mxCell id="facts" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#f5f8fa;strokeColor=#8ca1ac;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:567px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;ویژگی‌های اولیهٔ هر کندل X&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;پیشرو صعودی: C(X) &amp;gt; H(P)&lt;br&gt;پیشرو نزولی: C(X) &amp;lt; L(P)&lt;br&gt;همگون: هم‌رنگ/هم‌جهت با P؛ مستقل از پیشرو بودن&lt;br&gt;P = کندل بلافاصله قبل؛ هیچ شاهد آینده‌ای مصرف نمی‌شود.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;ژورنال عمومی ص۱؛ M3: تصمیم کاربر&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="facts" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#f5f8fa;strokeColor=#8ca1ac;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:567px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;ویژگی‌های اولیهٔ هر کندل X&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;پیشرو صعودی: C(X) &amp;gt; H(P)&lt;br&gt;پیشرو نزولی: C(X) &amp;lt; L(P)&lt;br&gt;همگون: هم‌رنگ/هم‌جهت با P؛ مستقل از پیشرو بودن&lt;br&gt;P = کندل بلافاصله قبل؛ هیچ شاهد آینده‌ای مصرف نمی‌شود.&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="236" width="630" x="1298" y="595" as="geometry" />
         </mxCell>
         <mxCell id="dep" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#5f5540;fillColor=#fffdf7;strokeColor=#c4b692;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=note;size=16;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:540px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;تعریف‌های هنوز لازم&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;شمارشی/غیرشمارشی، ادغام و شروط کامل استقرار در «بیس +» فرمول کامل ندارند.&lt;br&gt;تعریف isCounting در Pine خودکار قانون این منبع نیست.&lt;br&gt;نبود تعریف = «نامشخص»؛ نرسیدن کندل لازم = «در انتظار».&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲–۳؛ وابستگی‌های آشکار&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="236" width="600" x="655" y="595" as="geometry" />
+          <mxGeometry height="236" width="545" x="654" y="595" as="geometry" />
         </mxCell>
-        <mxCell id="opp" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:288px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;آیا X اولین کندل مخالف P است؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;صفات تصاویر برای همین تغییر جهت سنجیده می‌شوند.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;تصاویر ۱–۳&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="230" width="450" x="1388" y="934.5" as="geometry" />
-        </mxCell>
-        <mxCell id="wick" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:365px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;کلوز از Open قبلی گذشته، اما داخل سایهٔ مقابل است؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;نزولی: L(P) &amp;lt; C(X) &amp;lt; O(P)&lt;br&gt;صعودی: O(P) &amp;lt; C(X) &amp;lt; H(P)&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;تصویر ۱؛ قرینهٔ صعودی: ژورنال ص۲&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="280" width="570" x="1203" y="1220" as="geometry" />
-        </mxCell>
-        <mxCell id="pioneer" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#214831;fillColor=#e8f4ed;strokeColor=#6c987c;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:423px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;پیشتاز&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;تصویر ۱: بدنهٔ مخالف از Open قبلی عبور کرده؛ هنوز از Low قبلی نگذشته است.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;تصویر ۱&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="150" width="470" x="235" y="2240" as="geometry" />
-        </mxCell>
-        <mxCell id="breakprev" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:307px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;آیا Close از انتهای دامنهٔ P عبور کرده؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;نزولی: C(X) &amp;lt; L(P)&lt;br&gt;صعودی: C(X) &amp;gt; H(P)&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;تصاویر ۲–۳؛ تعریف عمومی پیشرو&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="280" width="480" x="1248" y="1540" as="geometry" />
-        </mxCell>
-        <mxCell id="k" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:346px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;تعداد پیشروهای همگونِ متوالی پیش از X؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;K = طول توالیِ هم‌جهت با P که به P ختم می‌شود.&lt;br&gt;فقط شمار کل کندل‌های هم‌رنگ کافی نیست.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;تصاویر ۲–۳؛ ژورنال ص۵&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="327" width="540" x="1166" y="1860" as="geometry" />
-        </mxCell>
-        <mxCell id="attr" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#214831;fillColor=#e8f4ed;strokeColor=#6c987c;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:360px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;پیشرو با صفت پیشتاز&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;K = 1&lt;br&gt;تنها P پیشرو همگونِ جهت قبلی است.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;تصویر ۲&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="150" width="400" x="748" y="2240" as="geometry" />
-        </mxCell>
-        <mxCell id="pp" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#214831;fillColor=#e8f4ed;strokeColor=#6c987c;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:405px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;پیشرو پیشتاز&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;K &amp;gt;= 2&lt;br&gt;P و دست‌کم یک کندل پیش از آن، پیشرو همگونِ جهت قبلی‌اند.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;تصویر ۳&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="176" width="450" x="1191" y="2227" as="geometry" />
-        </mxCell>
-        <mxCell id="plain" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#f5f8fa;strokeColor=#8ca1ac;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:459px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;بدون صفت احرازشده / حالت مرزی&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;ویژگی پیشرو بودن، در صورت وجود، حفظ می‌شود.&lt;br&gt;برابری Open/Low/High، دوجی و جزئیات گپ با شکل حل نشده‌اند.&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="152" width="510" x="1684" y="2239" as="geometry" />
-        </mxCell>
-        <mxCell id="tags" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#eaf3f7;strokeColor=#5b8393;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=parallelogram;perimeter=parallelogramPerimeter;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:576px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;ثبت ویژگی‌ها؛ نه اعلام بیس یا سیگنال&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;این آزمون برای هر کندل نگهداری می‌شود.&lt;br&gt;در کنترل استقرار: X = S و P = آخرین پیشروی بیس.&lt;br&gt;پیشتاز بودن به‌تنهایی به معنی موکد بودن نیست.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;خروجی مشترکِ تشخیص کندل&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="186" width="640" x="1015" y="2443" as="geometry" />
-        </mxCell>
-        <mxCell id="img_note" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#5f5540;fillColor=#fffdf7;strokeColor=#c4b692;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=note;size=16;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:576px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;حدود برداشت از تصاویر&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;در تصویر ۲، متن «پیشرو نزولی همگون» کنار کندل مخالف دیده می‌شود؛ با تعریف همگون نسبت به کندل سبز قبلی یکسان نیست.&lt;br&gt;این واژه، شرط هم‌رنگیِ اضافی برای کندل قرمز نشده است.&lt;br&gt;برابری Open(X)=Close(P) و نبود سایه در شکل، شرط اجباری فرض نشده‌اند.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;تصاویر تکمیلی کاربر&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="261" width="640" x="546" y="919" as="geometry" />
-        </mxCell>
-        <mxCell id="scan" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#f5f8fa;strokeColor=#8ca1ac;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:549px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;با هر کندل، هر دو مسیر تشکیل را بررسی کن&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;مسیر مخالف‌رنگ: عادی / اصلی&lt;br&gt;مسیر هم‌رنگِ ادغامی: محض&lt;br&gt;هم‌زمان، بیس‌های فعال قبلی نیز به‌روزرسانی می‌شوند.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲–۳؛ این تفکیک، ترتیب پردازش است&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="186" width="610" x="1030" y="2717" as="geometry" />
-        </mxCell>
-        <mxCell id="oppbase" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:346px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;اولین کندل مخالف پس از پیشرو موجود است؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;S = نخستین مخالف؛ P1 = آخرین پیشرو؛ P2 و P3 قدیمی‌ترند.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="280" width="540" x="1032" y="2964" as="geometry" />
-        </mxCell>
-        <mxCell id="normalwait" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#eaf3f7;strokeColor=#5b8393;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=parallelogram;perimeter=parallelogramPerimeter;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:414px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;این شاخه فعلاً نامزد تازه ندارد&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;انتظار برای دادهٔ بعدی؛ سایر مسیرها و بیس‌های قبلی ادامه دارند.&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="125" width="460" x="1572" y="3426.5" as="geometry" />
-        </mxCell>
-        <mxCell id="single" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:333px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;آیا S استقرارِ تک‌پیشرو P1 است؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;سنجش نسبت Low تا High خود P1&lt;br&gt;F(C_S) &amp;lt; 0.5 با جهت فیبو + شروط کامل استقرار&lt;br&gt;برابری و سایر شروطِ حل‌نشده، پذیرش یا رد حدسی نیستند.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="368" width="520" x="1001" y="3305" as="geometry" />
+        <mxCell id="opp" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:288px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;آیا X اولین کندل مخالف P است؟&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="171" width="366.5" x="1429.75" y="900" as="geometry" />
         </mxCell>
         <mxCell id="c1" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#214831;fillColor=#e8f4ed;strokeColor=#6c987c;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:333px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;نامزد تک‌کندلی&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;اعضا = P1؛ استقرار = S&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="124" width="370" x="2263" y="4700" as="geometry" />
-        </mxCell>
-        <mxCell id="two" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:365px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;آزمون دو پیشرو&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;فقط وقتی تک به‌علت عبور از ۰٫۵ پذیرفته نشد:&lt;br&gt;P2 نیز پیشرو همگونِ P1 است؟&lt;br&gt;S استقرارِ محدودهٔ سایه‌های مجموع P2 و P1 است؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="276" width="570" x="976" y="3713" as="geometry" />
-        </mxCell>
-        <mxCell id="oldest" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:294px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;کندل «اول» دو‌تایی غیرشمارشی است؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;مرجع دقیق واژهٔ «اول» هنوز باید روشن شود.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="280" width="460" x="742" y="4029" as="geometry" />
         </mxCell>
         <mxCell id="c2" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#214831;fillColor=#e8f4ed;strokeColor=#6c987c;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:351px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;نامزد دوکندلی&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;اعضا = P2, P1؛ استقرار = S&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="124" width="390" x="183" y="4700" as="geometry" />
@@ -121,20 +245,8 @@
         <mxCell id="principal" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#214831;fillColor=#e8f4ed;strokeColor=#6c987c;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:468px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;خانواده: بیس اصلی&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;همان ساختار پایه با کندل ادغامی&lt;br&gt;اصلی ساده / اصلی اصلاحی: معیار تفکیک ارائه نشده است.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۳&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="161" width="520" x="1555" y="5111" as="geometry" />
         </mxCell>
-        <mxCell id="purepre" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:371px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;نامزد محض از مسیر هم‌رنگ؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;پیشرو همگونِ غیرشمارشی + حداقل یک ادغامی هم‌رنگ&lt;br&gt;حداقل ۳ پیشرو همگون در ماقبل&lt;br&gt;استقرار مخالف‌رنگ لازم نیست.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۳&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="322" width="580" x="1615" y="2943" as="geometry" />
-        </mxCell>
-        <mxCell id="pureafter" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#44330c;fillColor=#fff7df;strokeColor=#b58b36;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rhombus;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:352px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;حداقل ۳ پیشرو همگون در مابعد احراز شده؟&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;زمان تأیید فقط بعد از رسیدن شواهد مابعد است؛ نه روی کندل مبدأ.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۳&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="280" width="550" x="2083" y="3349" as="geometry" />
-        </mxCell>
-        <mxCell id="purewait" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#eaf3f7;strokeColor=#5b8393;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=parallelogram;perimeter=parallelogramPerimeter;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:495px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;محض: در انتظار شواهد مابعد&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;کمبود کندل، رد قطعی نیست.&lt;br&gt;حدود دقیق شمارش و ادغام نامشخص بمانند، نه اینکه با حدس پذیرفته شوند.&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="152" width="550" x="2118" y="3775" as="geometry" />
-        </mxCell>
         <mxCell id="pure" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#214831;fillColor=#e8f4ed;strokeColor=#6c987c;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;rounded=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:504px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;خانواده: بیس محض&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;محدوده = Hi تا Low کندل بیس و استقرار با هم&lt;br&gt;ثبت زمان مبدأ و زمان احرازِ جداگانه&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۳&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="150" width="560" x="2118" y="5116.5" as="geometry" />
-        </mxCell>
-        <mxCell id="levels" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#5f5540;fillColor=#fffdf7;strokeColor=#c4b692;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=note;size=16;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:621px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;قرارداد سطح‌ها؛ وابستگی تمام شاخه‌ها&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;بیس نزولی / استقرار صعودی: صفر = L ، یک = H&lt;br&gt;شکل صعودی: صفر = H ، یک = L&lt;br&gt;برای ۱،۲،۳: L=min(L اعضا) ، H=max(H اعضا)&lt;br&gt;F(C)=(C-Z0)/(Z1-Z0)؛ «زیر ۰٫۵» با جهت فیبو خوانده شود.&lt;br&gt;برابری، شروط کامل استقرار و مرز ادغام هنوز بازند.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲ (متن و شکل)؛ فرمول صرفاً مختصات هندسی است&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="261" width="690" x="203" y="3358.5" as="geometry" />
         </mxCell>
         <mxCell id="candidate" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#18343f;fillColor=#eaf3f7;strokeColor=#5b8393;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=parallelogram;perimeter=parallelogramPerimeter;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:621px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;ثبت هر نامزد با هویت مستقل&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;نوع + تعداد + اعضای پایه B + استقرار S + سطوح ۰/۰٫۵/۱&lt;br&gt;زمان مبدأ / تشخیص + دلیل + ابهام‌های وابسته&lt;br&gt;پیداشدن نامزد تازه، بیس‌های قبلی را پاک نمی‌کند.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;خروجی تشکیل؛ هنوز مجوز معامله نیست&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="211" width="690" x="1470" y="5312" as="geometry" />
@@ -262,125 +374,36 @@
         <mxCell id="e3" dataRelation="" edge="1" parent="1" source="facts" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.50000;exitY=1.00085;exitDx=0;exitDy=0;entryX=0.50000;entryY=0.00000;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="opp" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" dataRelation="بله" edge="1" parent="1" source="opp" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.42778;exitY=0.92913;exitDx=0;exitDy=0;entryX=0.66228;entryY=0.16179;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="wick" value="بله">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-7" y="-10.55" as="offset" />
+        <mxCell id="e4" dataRelation="بله" edge="1" parent="1" source="opp" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;align=center;horizontal=1;entryX=0.498;entryY=0.014;entryDx=0;entryDy=0;entryPerimeter=0;" target="wick" value="بله">
+          <mxGeometry relative="1" x="-0.1361" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1482.9988770320128" y="1025.0582596988133" as="sourcePoint" />
+            <mxPoint x="1533.34" y="1146.72" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e5" dataRelation="خیر" edge="1" parent="1" source="opp" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.92778;exitY=0.57348;exitDx=0;exitDy=0;entryX=0.23824;entryY=-0.00066;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="plain" value="خیر">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-9.5" y="-10.45" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e6" dataRelation="بله" edge="1" parent="1" source="wick" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=-0.00018;exitY=0.50000;exitDx=0;exitDy=0;entryX=0.83085;entryY=-0.00200;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="pioneer" value="بله">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-7" y="-10.55" as="offset" />
+        <mxCell id="e5" dataRelation="خیر" edge="1" parent="1" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=18;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="plain" value="خیر">
+          <mxGeometry relative="1" x="-0.8816" y="1" as="geometry">
+            <mxPoint as="offset" />
             <Array as="points">
-              <mxPoint x="625.5" y="1360" />
+              <mxPoint x="2346" y="981.47" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e7" dataRelation="خیر" edge="1" parent="1" source="wick" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.50000;exitY=1.00143;exitDx=0;exitDy=0;entryX=0.50000;entryY=-0.00071;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="breakprev" value="خیر">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-9.5" y="-10.5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e8" dataRelation="بله" edge="1" parent="1" source="breakprev" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.47708;exitY=0.97786;exitDx=0;exitDy=0;entryX=0.57593;entryY=0.07554;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="k" value="بله">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-7" y="-10.55" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e9" dataRelation="خیر / مرزی" edge="1" parent="1" source="breakprev" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.97708;exitY=0.52393;exitDx=0;exitDy=0;entryX=0.06471;entryY=-0.00066;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="plain" value="خیر / مرزی">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="29.5" y="-10.5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e10" dataRelation="K = 1" edge="1" parent="1" source="k" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.02315;exitY=0.52385;exitDx=0;exitDy=0;entryX=1.00100;entryY=0.50000;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="attr" value="K = 1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-16.5" y="2.5" as="offset" />
-            <Array as="points">
-              <mxPoint x="1178.5" y="2315" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e11" dataRelation="K &gt;= 2" edge="1" parent="1" source="k" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.46296;exitY=0.96391;exitDx=0;exitDy=0;entryX=0.50000;entryY=-0.00057;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="pp" value="K &amp;gt;= 2">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-21.5" y="2.55" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e12" dataRelation="K = 0 / نامشخص" edge="1" parent="1" source="k" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.97963;exitY=0.52110;exitDx=0;exitDy=0;entryX=0.02157;entryY=-0.00197;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="plain" value="K = 0 / نامشخص">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="45.5" y="-10.55" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e13" dataRelation="" edge="1" parent="1" source="pioneer" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.50000;exitY=1.00067;exitDx=0;exitDy=0;entryX=0.08766;entryY=0.50000;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="tags" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="470" y="2536" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e14" dataRelation="" edge="1" parent="1" source="attr" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.81900;exitY=1.00067;exitDx=0;exitDy=0;entryX=0.09469;entryY=0.46667;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="tags" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e15" dataRelation="" edge="1" parent="1" source="pp" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.50000;exitY=1.00170;exitDx=0;exitDy=0;entryX=0.62656;entryY=-0.00108;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="tags" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e16" dataRelation="" edge="1" parent="1" source="plain" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=-0.00020;exitY=0.50000;exitDx=0;exitDy=0;entryX=0.99828;entryY=0.49892;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="tags" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1653.9" y="2315" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e17" dataRelation="توضیح منبع" edge="1" parent="1" source="img_note" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#3e7898;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.95469;exitY=1.00038;exitDx=0;exitDy=0;entryX=0.22187;entryY=-0.00054;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="tags" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e18" dataRelation="" edge="1" parent="1" source="tags" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.50000;exitY=1.00054;exitDx=0;exitDy=0;entryX=0.50000;entryY=-0.00215;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="scan" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e19" dataRelation="مسیر مخالف‌رنگ" edge="1" parent="1" source="scan" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.44590;exitY=1.00000;exitDx=0;exitDy=0;entryX=0.50000;entryY=-0.00071;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="oppbase" value="مسیر مخالف‌رنگ">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-43" y="-10.5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e20" dataRelation="مسیر محض؛ مستقل" edge="1" parent="1" source="scan" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.97951;exitY=1.00000;exitDx=0;exitDy=0;entryX=0.02155;entryY=0.47795;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="purepre" value="مسیر محض؛ مستقل">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint y="2.55" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e21" dataRelation="بله" edge="1" parent="1" source="oppbase" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.45278;exitY=0.95321;exitDx=0;exitDy=0;entryX=0.52981;entryY=0.02935;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="single" value="بله">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-7" y="-10.55" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e22" dataRelation="خیر" edge="1" parent="1" source="oppbase" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.99222;exitY=0.50893;exitDx=0;exitDy=0;entryX=-0.00913;entryY=0.49920;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="normalwait" value="خیر">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-9.5" y="-10.5" as="offset" />
+            <mxPoint x="1797.25" y="985.5" as="sourcePoint" />
+            <mxPoint x="2370" y="2049" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e23" dataRelation="بله" edge="1" parent="1" source="single" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.53808;exitY=0.96196;exitDx=0;exitDy=0;entryX=1.00081;entryY=0.50000;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="c1" value="بله">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-11.05" y="-6.5" as="offset" />
             <Array as="points">
-              <mxPoint x="2702.1" y="3659" />
+              <mxPoint x="1852.5" y="4127" />
               <mxPoint x="2702.1" y="4762" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e24" dataRelation="عبور از ۰٫۵" edge="1" parent="1" source="single" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.50000;exitY=1.00054;exitDx=0;exitDy=0;entryX=0.50000;entryY=-0.00036;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="two" value="عبور از ۰٫۵">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-29" y="-10.55" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e25" dataRelation="بله" edge="1" parent="1" source="two" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.19825;exitY=0.69928;exitDx=0;exitDy=0;entryX=0.75435;entryY=0.25357;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="oldest" value="بله">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-7" y="2.5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e26" dataRelation="عدم استقرار دو" edge="1" parent="1" source="two" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.80789;exitY=0.69203;exitDx=0;exitDy=0;entryX=0.20278;entryY=0.29565;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="three" value="عدم استقرار دو">
+        <mxCell id="e26" dataRelation="عدم استقرار دو" edge="1" parent="1" source="two" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;entryX=0.20278;entryY=0.29565;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;exitX=0.732;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" target="three" value="عدم استقرار دو">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-39.5" y="-10.5" as="offset" />
+            <mxPoint x="1112" y="4012" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e27" dataRelation="خیر" edge="1" parent="1" source="oldest" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=-0.00085;exitY=0.50000;exitDx=0;exitDy=0;entryX=0.52564;entryY=-0.00081;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="c2" value="خیر">
@@ -459,28 +482,14 @@
             <mxPoint x="-9.5" y="2.45" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e40" dataRelation="بله" edge="1" parent="1" source="purepre" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.90345;exitY=0.59689;exitDx=0;exitDy=0;entryX=0.10182;entryY=0.39786;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="pureafter" value="بله">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-7" y="-10.5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e41" dataRelation="خیر" edge="1" parent="1" source="purepre" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.36672;exitY=0.86677;exitDx=0;exitDy=0;entryX=0.55587;entryY=0.00000;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="normalwait" value="خیر">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-9.5" y="-10.5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e42" dataRelation="بله" edge="1" parent="1" source="pureafter" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.02255;exitY=0.52357;exitDx=0;exitDy=0;entryX=0.22054;entryY=-0.00200;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="pure" value="بله">
+        <mxCell id="e42" dataRelation="بله" edge="1" parent="1" source="pureafter" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="pure" value="بله">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-7" y="-10.45" as="offset" />
             <Array as="points">
-              <mxPoint x="2095.4" y="3958" />
-              <mxPoint x="2241.5" y="3958" />
+              <mxPoint x="2772" y="4024" />
+              <mxPoint x="2772" y="5191.5" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e43" dataRelation="هنوز داده کافی نیست / نامشخص" edge="1" parent="1" source="pureafter" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.52255;exitY=0.97786;exitDx=0;exitDy=0;entryX=0.45891;entryY=-0.00132;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="purewait" value="هنوز داده کافی نیست / نامشخص">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-83" y="-10.5" as="offset" />
+            <mxPoint x="2755.33" y="3958" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e44" dataRelation="" edge="1" parent="1" source="normal" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.93500;exitY=1.00101;exitDx=0;exitDy=0;entryX=0.02130;entryY=0.49953;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="candidate" value="">
@@ -490,9 +499,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e46" dataRelation="" edge="1" parent="1" source="pure" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.04875;exitY=1.00200;exitDx=0;exitDy=0;entryX=0.97870;entryY=0.49953;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="candidate" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e47" dataRelation="تعریف استقرار و سطوح" edge="1" parent="1" source="levels" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#3e7898;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=1.00001;exitY=0.50000;exitDx=0;exitDy=0;entryX=-0.00046;entryY=0.50000;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="single" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e48" dataRelation="سطوح مرجع" edge="1" parent="1" source="levels" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#3e7898;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.55181;exitY=1.00077;exitDx=0;exitDy=0;entryX=0.08667;entryY=0.50237;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="candidate" value="">
@@ -608,7 +614,7 @@
         <mxCell id="e66" dataRelation="صفات ذخیره‌شدهٔ S" edge="1" parent="1" source="tags" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#3e7898;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.91234;exitY=0.50000;exitDx=0;exitDy=0;entryX=0.97910;entryY=-0.00047;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="checkmulti" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="2740" y="2536" />
+              <mxPoint x="3615" y="2547" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -674,13 +680,6 @@
             <Array as="points">
               <mxPoint x="1533.5" y="5296" />
               <mxPoint x="1446.4" y="5296" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e76" dataRelation="تعریف/شمارش نامشخص" edge="1" parent="1" source="purepre" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#3e7898;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.77017;exitY=0.72981;exitDx=0;exitDy=0;entryX=0.08745;entryY=0.50000;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="purewait" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="2061.7" y="3851" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -773,10 +772,10 @@
             <mxPoint x="-58.5" y="-10.5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e93" dataRelation="ثبت وضعیت" edge="1" parent="1" source="normalwait" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#9baab2;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.82978;exitY=0.88880;exitDx=0;exitDy=0;entryX=0.88882;entryY=-0.00042;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="result" value="">
+        <mxCell id="e93" dataRelation="ثبت وضعیت" edge="1" parent="1" source="normalwait" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#9baab2;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.88882;entryY=-0.00042;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="result" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1953.7" y="3644" />
+              <mxPoint x="3450.33" y="2742" />
               <mxPoint x="5170.5" y="3644" />
             </Array>
           </mxGeometry>
@@ -903,11 +902,44 @@
         <mxCell id="e112" dataRelation="بیس‌های فعالِ قبلی نیز با این کندل پایش شوند" edge="1" parent="1" source="scan" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#3e7898;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=1.00016;exitY=0.50000;exitDx=0;exitDy=0;entryX=0.97829;entryY=-0.00047;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="watch" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="2761.5" y="2810" />
+              <mxPoint x="3555" y="2599.5" />
               <mxPoint x="2761.5" y="6396" />
               <mxPoint x="2795.5" y="6396" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="H5IuL7tNZvzVFJYmUZ6D-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=PeydaWebVF;fontSize=30;align=right;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;fontStyle=1;labelBackgroundColor=none;" value="&lt;div dir=&quot;rtl&quot;&gt;راهنما:&lt;/div&gt;" vertex="1">
+          <mxGeometry height="39" width="76" x="4284" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" dataRelation="" edge="1" parent="1" source="pioneer" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="tags" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1361" y="2506" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" dataRelation="" edge="1" parent="1" source="attr" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="tags" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1361" y="2216.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" dataRelation="" edge="1" parent="1" source="plain" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.99828;entryY=0.49892;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="tags" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2327" y="2951.84" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" dataRelation="" edge="1" parent="1" source="pp" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#546f7b;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=0.50000;exitY=1.00170;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="tags" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="levels" parent="1" style="whiteSpace=wrap;html=1;fontFamily=PeydaWebVF;fontSize=17;fontColor=#5f5540;fillColor=#fffdf7;strokeColor=#c4b692;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=12;overflow=hidden;shape=note;size=16;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" value="&lt;div style=&quot;width:621px;max-width:100%;margin:auto;&quot;&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 20px; font-weight: bold; line-height: 1.45; text-align: center;&quot;&gt;قرارداد سطح‌ها؛ وابستگی تمام شاخه‌ها&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size: 17px; line-height: 1.55; text-align: center; margin-top: 7px;&quot;&gt;بیس نزولی / استقرار صعودی: صفر = L ، یک = H&lt;br&gt;شکل صعودی: صفر = H ، یک = L&lt;br&gt;برای ۱،۲،۳: L=min(L اعضا) ، H=max(H اعضا)&lt;br&gt;F(C)=(C-Z0)/(Z1-Z0)؛ «زیر ۰٫۵» با جهت فیبو خوانده شود.&lt;br&gt;برابری، شروط کامل استقرار و مرز ادغام هنوز بازند.&lt;/div&gt;&lt;div dir=&quot;rtl&quot; style=&quot;font-size:12px;line-height:1.4;margin-top:8px;opacity:.8;&quot;&gt;بیس + ص۲ (متن و شکل)؛ فرمول صرفاً مختصات هندسی است&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="261" width="690" x="-830" y="2787" as="geometry" />
+        </mxCell>
+        <mxCell id="e47" dataRelation="تعریف استقرار و سطوح" edge="1" parent="1" source="levels" style="edgeStyle=none;noEdgeStyle=1;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#3e7898;fontColor=#25434f;fontFamily=PeydaWebVF;fontSize=15;labelBackgroundColor=#ffffff;exitX=1.00001;exitY=0.50000;exitDx=0;exitDy=0;entryX=-0.00046;entryY=0.50000;entryDx=0;entryDy=0;dashed=1;dashPattern=7 5;fontSource=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fnetwordai%2Fnftword%40main%2FPeydaWebVF.woff;" target="single" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
